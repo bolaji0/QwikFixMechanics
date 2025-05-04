@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QwikFix Mobile Mechanics</title>
+    <meta name="description" content="Professional mobile mechanics that come to you. Fast, reliable service wherever you are.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <div class="mobile-header">
+        <h2 class="mobile-logo">QwikFix</h2>
+        <div class="mobile-actions">
+            <!-- Theme Toggle Button (moves to mobile header on small screens) -->
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2 class="logo">QwikFix</h2>
+            <button class="sidebar-toggle" aria-label="Toggle sidebar">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i><span>Home</span></a></li>
+                <li><a href="#services"><i class="fas fa-wrench"></i><span>Services</span></a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i><span>Gallery</span></a></li>
+                <li><a href="#about"><i class="fas fa-users"></i><span>About Us</span></a></li>
+                <li><a href="#testimonials"><i class="fas fa-star"></i><span>Testimonials</span></a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <!-- <a href="#contact" class="btn-primary">Book Now</a> -->
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Mobile Auto Repair <span class="accent">At Your Door</span></h1>
+                    <div class="typing-container">
+                        <span id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p>Professional mechanics that come to you. No more wasting time at repair shops.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Book a Service</a>
+                        <a href="#services" class="btn-secondary">View Services</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=" alt="Mechanic working on car">
+                </div>
+            </div>
+            <div class="feature-boxes">
+                <div class="feature-box">
+                    <i class="fas fa-clock"></i>
+                    <h3>Fast Response</h3>
+                    <p>Most repairs completed same-day</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>We Come To You</h3>
+                    <p>Home, office, or roadside</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Warranty</h3>
+                    <p>12-month parts & labor guarantee</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="section-header">
+                <h2>Our <span class="accent">Services</span></h2>
+                <p>Professional auto repairs and maintenance at your location</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Oil Change</h3>
+                    <p>Quick and clean oil changes using premium synthetic oils for all vehicle types.</p>
+                    <div class="service-details">
+                        <p class="price">From $59.99</p>
+                        <p>Includes filter replacement and fluid check.</p>
+                        <ul>
+                            <li>Full synthetic options</li>
+                            <li>30-minute service</li>
+                            <li>Disposal included</li>
+                        </ul>
+                    </div>
+                    <button class="service-expand">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3>Battery Service</h3>
+                    <p>Battery testing, replacement, and jump start services for all vehicle makes and models.</p>
+                    <div class="service-details">
+                        <p class="price">From $89.99</p>
+                        <p>Free testing with replacement.</p>
+                        <ul>
+                            <li>Premium batteries</li>
+                            <li>2-5 year warranty</li>
+                            <li>Recycling of old battery</li>
+                        </ul>
+                    </div>
+                    <button class="service-expand">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brake-system"></i>
+                    </div>
+                    <h3>Brake Service</h3>
+                    <p>Complete brake inspection, pad replacement, and brake system repairs on-site.</p>
+                    <div class="service-details">
+                        <p class="price">From $129.99</p>
+                        <p>Per axle for pad replacement.</p>
+                        <ul>
+                            <li>Premium brake pads</li>
+                            <li>Rotor inspection</li>
+                            <li>Brake fluid check</li>
+                        </ul>
+                    </div>
+                    <button class="service-expand">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tune-Up</h3>
+                    <p>Comprehensive engine tune-up services to improve performance and fuel efficiency.</p>
+                    <div class="service-details">
+                        <p class="price">From $149.99</p>
+                        <p>Full system diagnostic included.</p>
+                        <ul>
+                            <li>Spark plug replacement</li>
+                            <li>Filter checks</li>
+                            <li>Ignition system inspection</li>
+                        </ul>
+                    </div>
+                    <button class="service-expand">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tire"></i>
+                    </div>
+                    <h3>Tire Service</h3>
+                    <p>Mobile tire replacement, rotation, and repair services with quality brand options.</p>
+                    <div class="service-details">
+                        <p class="price">From $49.99</p>
+                        <p>Per tire for rotation/balancing.</p>
+                        <ul>
+                            <li>Major brands available</li>
+                            <li>Puncture repairs</li>
+                            <li>Proper disposal</li>
+                        </ul>
+                    </div>
+                    <button class="service-expand">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electrical Repair</h3>
+                    <p>Diagnostic and repair of electrical systems, starters, alternators, and wiring issues.</p>
+                    <div class="service-details">
+                        <p class="price">From $99.99</p>
+                        <p>Diagnostic fee (applied to repair).</p>
+                        <ul>
+                            <li>Advanced diagnostics</li>
+                            <li>Starter/alternator testing</li>
+                            <li>Wiring inspection</li>
+                        </ul>
+                    </div>
+                    <button class="service-expand">Learn More</button>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="#contact" class="btn-primary">Book a Service Now</a>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <div class="section-header">
+                <h2>Our <span class="accent">Gallery</span></h2>
+                <p>See our mechanics in action with real service examples</p>
+            </div>
+            <div class="gallery-container">
+                <div class="random-image-showcase">
+                    <h3>Service Highlights</h3>
+                    <div class="random-image">
+                        <img id="random-gallery-image" src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FyJTIwcmVwYWlyfGVufDB8fDB8fHww" alt="Random car repair image">
+                        <div class="image-caption" id="image-caption">Loading...</div>
+                    </div>
+                    <button id="new-random-image" class="btn-secondary">Show Another</button>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Gallery images will be populated here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2>About <span class="accent">QwikFix</span></h2>
+                <p>Professional mobile mechanics you can trust</p>
+            </div>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="/QwikFixLogo.jpeg" alt="Professional mechanics team">
+                </div>
+                <div class="about-content">
+                    <h3>Our Story</h3>
+                    <p>QwikFix Mobile Mechanics was founded in 2015 with a simple mission: bring professional auto repair services directly to customers, saving them time and hassle.</p>
+                    <p>What started as a single van operation has grown into a fleet of mobile service vehicles, covering the entire metropolitan area with qualified mechanics ready to help.</p>
+                    <h3>Our Approach</h3>
+                    <p>We believe automotive service should be transparent, convenient, and stress-free. All our mechanics are ASE certified, background-checked, and committed to excellent customer service.</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <h3>Our Growth</h3>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2015</h4>
+                            <p>Founded with a single service van</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2017</h4>
+                            <p>Expanded to 5 service vehicles and added tire services</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2019</h4>
+                            <p>Launched our booking app for easier scheduling</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2021</h4>
+                            <p>Expanded service area to cover entire metro region</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Today</h4>
+                            <p>Fleet of 15 vehicles and over 2,000 happy customers served</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-section">
+                <h3>Meet Our Team</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZW1wbG95ZWV8ZW58MHx8MHx8fDA%3D" alt="Team member">
+                        </div>
+                        <h4>Michael Rodriguez</h4>
+                        <p>Founder & Master Mechanic</p>
+                        <p>ASE Certified, 20+ years experience</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1682437826626-044d1234806d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGVtcGxveWVlJTIwZmVtYWxlfGVufDB8fDB8fHww" alt="Team member">
+                        </div>
+                        <h4>Sarah Johnson</h4>
+                        <p>Service Manager</p>
+                        <p>Customer service specialist</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZW1wbG95ZWV8ZW58MHx8MHx8fDA%3D" alt="Team member">
+                        </div>
+                        <h4>David Chen</h4>
+                        <p>Lead Technician</p>
+                        <p>Electrical systems specialist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <!-- <section id="testimonials" class="section">
+            <div class="section-header">
+                <h2>Customer <span class="accent">Testimonials</span></h2>
+                <p>See what our satisfied customers have to say</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-controls">
+                    <button class="prev-testimonial" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="next-testimonial" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="testimonial-container">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I was skeptical about mobile mechanics, but  changed my mind. They performed a full brake job in my driveway, and the brakes work better than when the car was new!"</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Robert M.</p>
+                            <p class="author-info">Brake Service</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"QwikFix saved my day! My car wouldn't start at work, and within an hour they were there replacing my battery. Professional, fast, and reasonably priced!"</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Jennifer T.</p>
+                            <p class="author-info">Battery Replacement Service</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"The convenience factor alone is worth it. No more sitting in waiting rooms or arranging rides. They came to my office parking lot and did my oil change while I worked. Brilliant service!"</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Alex K.</p>
+                            <p class="author-info">Oil Change Service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots"></div>
+            </div>
+            <div class="testimonial-cta">
+                <p>Trusted by over 2,000 customers in the area</p>
+                <a href="#contact" class="btn-primary">Join Our Satisfied Customers</a>
+            </div>
+        </section> -->
+
+        <!-- Independent Testimonials Section -->
+     <section id="new-testimonials" class="testimonial-section">
+        <div class="section-header">
+            <h2>What <span class="accent">Clients Say</span></h2>
+            <p>Real feedback from satisfied QwikFix customers</p>
+        </div>
+    
+        <div class="testimonial-wrapper">
+        <div class="testimonial-slider-new">
+            <div class="testimonial-card active">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"QwikFix was amazing! Quick, professional, and affordable. My car battery was replaced at work in under an hour!"</p>
+                <p class="testimonial-author">– Jennifer T.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="testimonial-text">"Had an oil change done in my driveway while I worked. So convenient and well-priced!"</p>
+                <p class="testimonial-author">– Alex K.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="testimonial-text">"Had an oil change done in my driveway while I worked. So convenient and well-priced!"</p>
+                <p class="testimonial-author">– Alex K.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"They fixed my brakes fast, and now they feel better than new. Will definitely use again!"</p>
+                <p class="testimonial-author">– Robert M.</p>
+            </div>
+        </div>
+    
+        <div class="testimonial-controls-new">
+            <button class="testimonial-prev-new"><i class="fas fa-chevron-left"></i></button>
+            <button class="testimonial-next-new"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        </div>
+     </section>
+  
+
+        <!-- Service Tracker Section -->
+        <section id="tracker" class="section">
+            <div class="section-header">
+                <h2>Service <span class="accent">Tracker</span></h2>
+                <p>Track your mechanic in real-time</p>
+            </div>
+            <div class="tracker-container">
+                <div class="tracker-info">
+                    <div class="">
+                        <h3>Your Service Status</h3>
+                        <div class="status-pill">
+                            <span class="status-dot pulse"></span>
+                            <span id="status-text">Mechanic En Route</span>
+                        </div>
+                    </div>
+                    <div class="tracker-details">
+                        <div class="detail-item">
+                            <i class="fas fa-user-alt"></i>
+                            <div>
+                                <h4>Technician</h4>
+                                <p id="technician-name">David Chen</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-wrench"></i>
+                            <div>
+                                <h4>Service</h4>
+                                <p id="service-type">Battery Replacement</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>ETA</h4>
+                                <p id="eta">15 minutes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tracker-map">
+                    <div class="map-placeholder">
+                        <div class="map-animation">
+                            <i class="fas fa-car-side"></i>
+                            <div class="route-line"></div>
+                            <i class="fas fa-map-marker-alt destination"></i>
+                        </div>
+                        <p>Live tracking available with confirmed bookings</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tracker-stages">
+                <div class="stage-item active">
+                    <div class="stage-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <p>Booking Confirmed</p>
+                </div>
+                <div class="stage-item active">
+                    <div class="stage-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <p>Technician Assigned</p>
+                </div>
+                <div class="stage-item current">
+                    <div class="stage-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <p>En Route</p>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <p>Service in Progress</p>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-icon">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <p>Service Complete</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2>Book a <span class="accent">Service</span></h2>
+                <p>Schedule your mobile auto repair in minutes</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>service@qwikfixmechanics.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Available 7 days a week, 7am-9pm</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Serving the entire metropolitan area</p>
+                    </div>
+                    <div class="contact-image">
+                        <img src="https://media.istockphoto.com/id/1554627149/photo/auto-mechanic-are-repair-and-maintenance-auto-engine-is-problems-at-car-repair-shop.jpg?s=612x612&w=0&k=20&c=_zvBz-ZNgQhK5YgpihiLsOvjTC0yWFYsHEJt-WdCgp0=" alt="Mobile mechanic service">
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="booking-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <div class="error-message" id="phone-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="oil-change">Oil Change</option>
+                                <option value="battery">Battery Service</option>
+                                <option value="brakes">Brake Service</option>
+                                <option value="tune-up">Tune-Up</option>
+                                <option value="tire">Tire Service</option>
+                                <option value="electrical">Electrical Repair</option>
+                                <option value="diagnostic">Diagnostic</option>
+                                <option value="other">Other (Please specify)</option>
+                            </select>
+                            <div class="error-message" id="service-error"></div>
+                        </div>
+                        <div class="form-group" id="other-service-group" style="display: none;">
+                            <label for="other-service">Please Specify Service</label>
+                            <input type="text" id="other-service" name="other-service">
+                            <div class="error-message" id="other-service-error"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                                <div class="error-message" id="date-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="" disabled selected>Select time</option>
+                                    <option value="morning">Morning (7am-11am)</option>
+                                    <option value="afternoon">Afternoon (12pm-4pm)</option>
+                                    <option value="evening">Evening (5pm-9pm)</option>
+                                </select>
+                                <div class="error-message" id="time-error"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Service Location</label>
+                            <input type="text" id="address" name="address" placeholder="Address where service is needed" required>
+                            <div class="error-message" id="address-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicle">Vehicle Information</label>
+                            <input type="text" id="vehicle" name="vehicle" placeholder="Year, Make, Model" required>
+                            <div class="error-message" id="vehicle-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Please provide any additional details about the issue"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>QwikFix</h2>
+                <p>Mobile Mechanics Ltd</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Oil Change</a></li>
+                        <li><a href="#services">Battery Service</a></li>
+                        <li><a href="#services">Brake Service</a></li>
+                        <li><a href="#services">Tune-Up</a></li>
+                        <li><a href="#services">Tire Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="tel:5551234567">(555) 123-4567</a></li>
+                        <li><a href="mailto:service@qwikfixmechanics.com">service@qwikfixmechanics.com</a></li>
+                        <li><p>Available 7 days a week</p></li>
+                        <li><p>7am-9pm</p></li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 QwikFix Mobile Mechanics Ltd. All rights reserved.</p>
+            <ul class="footer-legal">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li style="color: chocolate;">By:Mustapha Fathiu: <a style="color: red; text-decoration: underline;"  href="mailto:bjmustapha48@gmail.com">Mail</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- Modal Container -->
+    <div class="modal-container" id="modal-container">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content" id="modal-content">
+                <!-- Modal content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const cards = document.querySelectorAll('.testimonial-card');
+          const prev = document.querySelector('.testimonial-prev-new');
+          const next = document.querySelector('.testimonial-next-new');
+        
+          let index = 0;
+        
+          function show(indexToShow) {
+            cards.forEach((card, i) => {
+              card.classList.toggle('active', i === indexToShow);
+            });
+          }
+        
+          prev.addEventListener('click', () => {
+            index = (index - 1 + cards.length) % cards.length;
+            show(index);
+          });
+        
+          next.addEventListener('click', () => {
+            index = (index + 1) % cards.length;
+            show(index);
+          });
+        
+          // Auto-rotate
+          setInterval(() => {
+            index = (index + 1) % cards.length;
+            show(index);
+          }, 8000);
+        });
+        </script>
+        
+    <script src="js/theme.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/tracker.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/testimonials.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

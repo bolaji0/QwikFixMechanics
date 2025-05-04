@@ -1,0 +1,119 @@
+:root {
+    /* Base colors */
+    --primary-dark: #1a1e2e;
+    --secondary-dark: #252a3a;
+    --tertiary-dark: #2d3348;
+    --text-dark: #f0f2f5;
+    --accent-dark: #00e676;
+    --muted-dark: #8c92a3;
+    --border-dark: #3a4055;
+    --hover-dark: #323848;
+    
+    --primary-light: #ffffff;
+    --secondary-light: #f5f7fa;
+    --tertiary-light: #ebeef2;
+    --text-light: #212733;
+    --accent-light: #0ca65a;
+    --muted-light: #6c757d;
+    --border-light: #d1d9e6;
+    --hover-light: #e1e5eb;
+    
+    /* Brand colors */
+    --brand-blue: #1e56a0;
+    --brand-steel: #6c7a8a;
+    --brand-green: #00e676;
+    --brand-green-dark: #00c853;
+    
+    /* Utility colors */
+    --error: #ff3b30;
+    --success: #34c759;
+    --warning: #ff9500;
+    --info: #007aff;
+    
+    /* Spacing */
+    --space-xs: 0.25rem; /* 4px */
+    --space-sm: 0.5rem;  /* 8px */
+    --space-md: 1rem;    /* 16px */
+    --space-lg: 1.5rem;  /* 24px */
+    --space-xl: 2rem;    /* 32px */
+    --space-xxl: 3rem;   /* 48px */
+    
+    /* Typography */
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-family-secondary: 'Roboto', sans-serif;
+    
+    --font-size-xs: 0.75rem;   /* 12px */
+    --font-size-sm: 0.875rem;  /* 14px */
+    --font-size-md: 1rem;      /* 16px */
+    --font-size-lg: 1.125rem;  /* 18px */
+    --font-size-xl: 1.25rem;   /* 20px */
+    --font-size-xxl: 1.5rem;   /* 24px */
+    --font-size-xxxl: 2rem;    /* 32px */
+    --font-size-xxxxl: 2.5rem; /* 40px */
+    
+    /* Border radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-pill: 9999px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    --shadow-xl: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+    
+    /* Animation */
+    --transition-fast: 150ms;
+    --transition-normal: 250ms;
+    --transition-slow: 350ms;
+    --transition-very-slow: 500ms;
+    
+    /* Z-index layers */
+    --z-negative: -1;
+    --z-normal: 1;
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+    
+    /* Layout */
+    --sidebar-width: 250px;
+    --sidebar-collapsed-width: 80px;
+    --header-height: 70px;
+    --content-width: 1200px;
+    
+    /* Apply default theme (dark mode) */
+    --bg-primary: var(--primary-dark);
+    --bg-secondary: var(--secondary-dark);
+    --bg-tertiary: var(--tertiary-dark);
+    --text-primary: var(--text-dark);
+    --text-muted: var(--muted-dark);
+    --border-color: var(--border-dark);
+    --accent-color: var(--accent-dark);
+    --hover-color: var(--hover-dark);
+}
+
+/* Light theme class */
+.light-theme {
+    --bg-primary: var(--primary-light);
+    --bg-secondary: var(--secondary-light);
+    --bg-tertiary: var(--tertiary-light);
+    --text-primary: var(--text-light);
+    --text-muted: var(--muted-light);
+    --border-color: var(--border-light);
+    --accent-color: var(--accent-light);
+    --hover-color: var(--hover-light);
+}
+
+/* :root {
+    --bg-secondary: #f8f9fa;
+    --text-primary: #1e1e1e;
+    --accent: #f25757;
+    --card-bg: #ffffff;
+    --shadow-sm: 0 2px 10px rgba(0,0,0,0.1);
+  } */
